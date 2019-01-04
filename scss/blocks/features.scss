@@ -1,0 +1,13 @@
+.features {
+	&__list {
+
+		@media (min-width: $screen-lg) {
+			display: flex;
+			flex-wrap: wrap;
+
+			.feature {
+				width: 33.33334%;
+			}
+		}
+	}
+}
