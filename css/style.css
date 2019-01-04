@@ -540,6 +540,15 @@ h2 {
 .guitar {
   background-image: url("../img/directions_card_guitar.jpg"); }
 
+.vocal {
+  background-image: url(../img/directions_card_vocal.jpg); }
+
+.fortepiano {
+  background-image: url(../img/directions_card_fortepiano.jpg); }
+
+.lectures {
+  background-image: url(../img/directions_card_lectures.jpg); }
+
 @media (min-width: 1200px) {
   .col--lg-1 {
     width: 25%; }
