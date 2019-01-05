@@ -4,16 +4,18 @@
 @import 'normalize';
 @import 'grid';
 @import 'blocks/global';
+@import 'blocks/fonts';
 
-@import 'blocks/btn';
 @import 'blocks/promo-wrap';
+@import 'blocks/form';
+@import 'blocks/gallery';
+@import 'blocks/page-map';
+@import 'blocks/temp';
 @import 'blocks/main-nav';
 @import 'blocks/page-header';
 @import 'blocks/promo';
-@import 'blocks/features';
-@import 'blocks/feature';
 @import 'blocks/logo';
-@import 'blocks/price';
 @import 'blocks/genres';
+@import 'blocks/footer';
 
 // ТОЛЬКО импортирование!
