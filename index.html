@@ -6,26 +6,26 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<header class="page-header container">
-	<div class="container">
-		<div class="row">
-			<div class="logo"><img src="img/Logo.png" alt="Diez" class="logo__img"></div>
-			<nav class="main-nav">
-				<ul class="main-nav_list">
-					<li class="main-nav__item"><a href="">направления</a></li>
-					<li class="main-nav__item"><a href="">о школе</a></li>
-					<li class="main-nav__item"><a href="">видео</a></li>
-					<li class="main-nav__item"><a href="">контакты</a></li>
-				</ul>
-			</nav>
+<div class="page-header">
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="logo"><img src="img/Logo.png" alt="Diez" class="logo__img"></div>
+				<nav class="main-nav">
+					<ul class="main-nav__list">
+						<li class="main-nav__item"><a href="">направления</a></li>
+						<li class="main-nav__item"><a href="">о школе</a></li>
+						<li class="main-nav__item"><a href="">видео</a></li>
+						<li class="main-nav__item"><a href="">контакты</a></li>
+					</ul>
+				</nav>
+			</div>
 		</div>
-	</div>
+	</header>
 
-	<section class="promo">
 	<div class="container">
 		<div class="row">
-			<div class="col-9">
+			<div class="col-9 promo">
 				<h1 class="promo__tatle">Diez — школа музыкального искусства</h1>
 				<p class="promo__text">Научим петь, играть на инструментах, не бояться сцены и получать удовольствие от музыки</p>
 			</div>
@@ -41,33 +41,42 @@
 			</div>
 		</div>
 	</div>
-</section>
-</header>
-
-
+</div>
 
 <section class="genres">
 	<div class="container">
-		<div class="row">
-			<h2 class="genres-title">Растим музыкантов</h2>
-			<div class="row">
-				<div class="genres_list guitar col-5"> 
-					<h3 class="genres-item_title">Гитара</h3>
+		<h2 class="genres__title">Растим музыкантов</h2>
+
+		<div class="row  genres__wrap">
+			<div class="col-5 genres__card-inner--offset">
+				<div class="genres__card genres__card--guitar"> 
+					<h3 class="genres__card-title">Гитара</h3>
+
 					<p class="genres-text">Хочешь играть как Джими Хендрикс, Би Би Кинг или Андрес Сеговия— мы научим</p> 
 				</div>
-				<div class="genres_list vocal col-7"> 
-					<h3 class="genres-item_title">Вокал</h3>
+			</div>
+			<div class="col-6">
+				<div class="genres__card genres__card--vocal"> 
+					<h3 class="genres__card-title">Вокал</h3>
 					<p class="genres-text">Академический, рок, эстрадный, джазовый </p> 
 				</div>
-				<div class="genres_list fortepiano col-5"> 
-					<h3 class="genres-item_title">Фортепиано</h3>
+			</div>	
+
+			<div class="col-5 genres__card-inner--offset ">
+				<div class="genres__card genres__card--fortepiano"> 
+					<h3 class="genres__card-title">Фортепиано</h3>
 					<p class="genres-text">Академический, рок, эстрадный, джазовый </p> 
 				</div>
-				<div class="genres_list lectures col-3"> 
-					<h3 class="genres-item_title">Лекции</h3>
+			</div>
+			<div class="col-3">
+				<div class="genres__card genres__card--lectures"> 
+					<h3 class="genres__card-title">Лекции</h3>
 					<p class="genres-tex">Подтяни свои знания в теории музыки</p> 
 				</div>
-				<div class="genres_list col-3"> <h3 class="genres-item_title">Все направления</h3>
+			</div>
+			<div class="col-3">	
+				<div class="genres__card"> 
+					<h3 class="genres__card-title">Все направления</h3>
 			</div>
 		</div>
 	</div>
@@ -75,50 +84,65 @@
 
 <section class="temp">
 	<div class="container">
-		<div class="row">
-			<div class="temp-left col-6">
 				<h2 class="temp-title">Задаем темп</h2>
-				<div class="temp-items col-6">
+		<div class="row">
+
+				<div class="temp-items col-3">
 					<h3>Состав</h3>
 					<p>Тебя будут обучать провессионалы с высшим музыкальным образованием</p>
 				</div>
-				<div class="temp-items col-6">
+				<div class="temp-items col-3">
 					<h3>Результат</h3>
 					<p>Выступи на отчетном концерте через 3 месяца обучения</p>
 				</div>
-			</div>
-			<div class="temp-right col-6">
-				<div class="temp-items col-6">
+		
+				<div class="temp-items col-3">
 					<h3>Студия</h3>
 					<p>Запиши свою песню в нашей студии звукозаписи, одна песня в месяц бесплатно</p>
 				</div>
-				<div class="temp-items col-6">
+
+				<div class="temp-items col-3">
 					<form action="" class="form">
-					<h2 class="form__title">Вводный урок</h2>
-					<p class="form__text">Попробуй любые направления  бесплатно</p>
-					<input type="text" class="form__input">
-					<input type="text" class="form__input">
-					<select class=form__select></select>
-					<button class="form__btn btn">Записаться</button>
-				</form>
+						<h2 class="form__title">Вводный урок</h2>
+						<p class="form__text">Попробуй любые направления  бесплатно</p>
+						<input type="text" class="form__input">
+						<input type="text" class="form__input">
+						<select class=form__select></select>
+						<button class="form__btn btn">Записаться</button>
+					</form>
 				</div>
-			</div>
+			
 		</div>
 	</div>
 </section>		
 
 <section class="gallery">
 	<div class="container">
-		<div class="row">
-			<div class="gallery-title">
+			<div class="gallery__title">
 				<h2>В стенах школы</h2>
 			</div>
-			<div class="gallery-list">
-				<div class="gallery-item col-9"></div>
-				<div class="gallery-item col-3"></div>
-				<div class="gallery-item col-3"></div>
-				<div class="gallery-item col-3"></div>
-			</div>
+		<div class="row">
+				<div class="col-8 gallery__item--cherry gallery__item--offset">
+					<h3>Зимняя вишня</h3>
+					<p>Заключительный зимний концерт 2017 года
+выступало 97 учеников</p>
+				</div>
+				
+			<div class="gallery-list col-3">
+					<div class="gallery__item--yang">
+						<h3>Янг Чжо</h3>
+						<p>Репетиция сольной партии скрипки</p>
+					</div>
+					<div class="gallery__item--calm">
+						<h3>Летний штиль</h3>
+						<p>За кулисами концерта</p>
+					</div>
+					<div class="gallery__item--trofimov">
+						<h3>Сергей Трофимов</h3>
+						<p>ЛЮБЭ-Выйду в поле с конем</p>
+					</div>
+				</div>
+			
 		</div>
 	</div>
 </section>
@@ -126,14 +150,28 @@
 <section class="page-map">
 	<div class="container">
 		<div class="row">
-			<div class="map-address">
-				<div class="row">
+			<div class="map-address col-9">
 					<h2 class="map-title">Ждем тебя</h2>
+				
 					<div class="map-address">+7 (812) 566 56 56 СПБ, 6-я Линия ВО, 42</div>
-				</div>
-				<div class="map"></div>
+				
+					<div id="map" class="map">
+
+						<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+	    			</script>
+	    			<script type="text/javascript">
+	        		ymaps.ready(init);
+	    				function init(){   
+	      			var myMap = new ymaps.Map("map", {
+	            		center: [59.957016, 30.317892],
+	            		zoom: 10
+				        });
+					    }
+						</script>
+					</div>
+					
 			</div>
-			<div class="form"></div>
+			<div class="form col-3"></div>
 		</div>
 	</div>
 </section>

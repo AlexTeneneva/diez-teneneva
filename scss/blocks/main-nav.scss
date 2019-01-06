@@ -1,1 +1,19 @@
-.main-nav {}
+.main-nav {
+	flex-grow: 1; 
+
+	&__item {
+		margin-left: 15px;
+		color: $color-black;
+
+		a {
+			color: inherit;
+			text-transform: uppercase;
+		}
+	}
+
+	&__list {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+}

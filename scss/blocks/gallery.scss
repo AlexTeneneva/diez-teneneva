@@ -1,0 +1,34 @@
+.gallery {
+	color: $color-white;
+
+	// &__title {
+	// 	color: $color-black;
+	// }
+
+	&__item {
+	
+	&--yang {
+		background-image: url(../img/video_card_img_2.jpg);
+		background-repeat: no-repeat;
+	}
+	
+	&--calm {
+		background-image: url(../img/video_card_img_3.jpg);
+		background-repeat: no-repeat;
+	}
+
+	&--trofimov {
+		background-image: url(../img/video_card_img_4.jpg);	
+		background-repeat: no-repeat;
+	}
+
+	&--cherry {
+		background-image: url(../img/video_card_img_1.jpg);
+		background-repeat: no-repeat;
+	}
+		&--offset {
+			margin-left: 100px;
+		}
+	}
+
+}

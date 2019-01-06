@@ -1,3 +1,9 @@
 .promo {
-	
+	padding-bottom: 105px;
+
+	h1,
+	&__text {
+	color: $color-white;
+	}
+
 }

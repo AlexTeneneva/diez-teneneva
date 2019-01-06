@@ -1,5 +1,90 @@
 .genres {
 	display: flex;
+	color: $color-white;
+	position: relative;
+	padding-top: 50px;
+
+	&__title {
+		color: #000;
+
+
+
+		@media (min-width: 1280px) {
+			position: absolute;
+			bottom: 30px;
+			left: 20px;
+			writing-mode: tb-rl;
+			transform: rotate(180deg);
+
+
+			// 1)
+			// развернуть transform rotate
+			// transform-origin 
+			// left
+			// bottom
+			
+			// 2)
+		  // writing-mode: lr ;
+		  // развернуть transform: rotate(180deg);
+		}
+	}
+
+	&__title:before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 525px;
+  width: 1px;
+  left: -15px;
+  background-color: $color-main;
+  padding-bottom: 40px;
+}
+
+&__title:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 525px;
+  width: 1px;
+  left: 35px;
+  background-color: $color-main;
+  padding-top: 40px;
+}
+
+
+
+	&__card-inner {
+
+		&--offset {
+			margin-left: 100px;
+		}
+	}
+
+	&__card {
+		height: 270px;
+		margin-bottom: 30px;
+		padding: 20px;
+
+		&--guitar {
+			background-image: url("../img/directions_card_guitar.jpg");
+		}
+
+		&--vocal {
+			background-image: url(../img/directions_card_vocal.jpg);
+		}
+
+		&--fortepiano {
+			background-image: url(../img/directions_card_fortepiano.jpg);
+		}
+
+		&--lectures {
+			background-image: url(../img/directions_card_lectures.jpg);
+		}
+	}
+
+	&__card-title {
+		margin: 0;
+	}
 }
 
 .guitar {
@@ -10,9 +95,9 @@
 	background-image: url(../img/directions_card_vocal.jpg);
 }
 
-.fortepiano {
-	background-image: url(../img/directions_card_fortepiano.jpg);
-}
+// .fortepiano {
+// 	background-image: url(../img/directions_card_fortepiano.jpg);
+// }
 
 .lectures {
 	background-image: url(../img/directions_card_lectures.jpg);

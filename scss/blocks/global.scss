@@ -28,6 +28,11 @@ h1,
 h2 {
   font-family: 'Prata';
   font-weight: 400;
+  position: relative;
+}
+
+h2 {
+  color: $color-black;
 }
 
 li,

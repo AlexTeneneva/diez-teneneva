@@ -1,7 +1,8 @@
 .container {
   max-width: 1200px;
   margin: auto;
-  padding: 0 15px;
+  position: relative;
+  // padding: 0 15px;
 /*  background-color: #ddd;*/
 }
 
@@ -25,77 +26,10 @@
   width: 100%;
 }
 
-.col-1,
-.col-2,
-.col-3,
-.col-4 {
-    padding-left: 15px;
-    padding-right: 15px;
-}
 
-.col-1 {
-  width: 8.33%;
-  flex: 0 0 8.33%;
-  max-width: 8.33%;
-}
-.col-2 {
-  width: 16.66%;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.col-3 {
-  width: 25%;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.col-4 {
-  width: 33.33%;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.col-5 {
-  width: 41.66%;  
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.col-6 {
-  width: 50%;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.col-7 {
-  width: 58.33%;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.col-8 {
-  width: 66.66%;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.col-9 {
-  width: 75%;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.col-10 {
-  width: 83.33%;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.col-11 {
-  width: 91.66%;  
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.col-12 {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 
 .page-header {
-background-image: url(../img/bg_main.jpg);
+  background-image: url(../img/bg_main.jpg);
 }
 
 /*.demo-block {
@@ -116,52 +50,68 @@ background-image: url(../img/bg_main.jpg);
 	margin-left: 10px;
 }*/
 
-@media (min-width: 1200px) {
-.col--lg-1 { width: 25%; }
-.col--lg-2 { width: 50%; }
-.col--lg-3 { width: 75%; }
-.col--lg-4 { width: 100%; }
-.col--lg-first {order: -1}
-.col-lg-pl-add {padding-left: 50px;}
-
-
-.col-1 {
-  width: 8.33%;
-  flex: 0 0 8.33%;
-  max-width: 8.33%;
-}
-.col-2-lg {
-  width: 16.66%;
-}
-.col-3-lg {
-  width: 25%;
-}
-.col-4-lg {
-  width: 33.33%;
-}
-.col-5-lg {
-  width: 41.66%;  
-}
-.col-6-lg {
-  width: 50%;
-}
-.col-7-lg {
-  width: 58.33%;
-}
-.col-8-lg {
-  width: 66.66%;
-}
-.col-9-lg {
-  width: 75%;
-}
-.col-10-lg {
-  width: 83.33%;
-}
-.col-11-lg {
-  width: 91.66%;  
-}
-.col-12-lg {
-  width: 100%;
-}
+@media (min-width: 1280px) {
+  .col-1 {
+    width: 8.33%;
+    flex: 0 0 8.33%;
+    max-width: 8.33%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col-2 {
+    width: 16.66%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col-3 {
+    width: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col-4 {
+    width: 33.33%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col-5 {
+    width: 41.66%;  
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col-6 {
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col-7 {
+    width: 58.33%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col-8 {
+    width: 66.66%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col-9 {
+    width: 75%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col-10 {
+    width: 83.33%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col-11 {
+    width: 91.66%;  
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col-12 {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
 }
