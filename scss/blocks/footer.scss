@@ -1,0 +1,23 @@
+.footer {
+	display: flex;
+	margin-top: 85px;
+	width: 100%;
+
+	&__logo {
+		color: $color-main;
+	}
+
+	&__socials{
+		flex-grow: 1;
+	&__list {
+		color: $color-black;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__item {
+		text-transform: uppercase;
+		margin-left: 15px;
+	}
+}
+}

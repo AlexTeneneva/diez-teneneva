@@ -433,6 +433,9 @@ a {
   .form h2,
   .form p {
     text-align: center; }
+  .form p {
+    margin-top: 0;
+    padding-top: 0; }
   .form h2 {
     font-weight: bold; }
   .form__btn {
@@ -507,12 +510,14 @@ a {
     margin-top: auto; }
 
 .page-map {
-  margin-top: 90px;
-  position: relative; }
-  .page-map__mapblock {
+  margin-top: 90px; }
+  .page-map__contact {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    margin-bottom: 45px; }
+  .page-map__address {
+    padding-top: 10px; }
   .page-map h2 {
     font-size: 50px;
     margin: 0; }
@@ -520,7 +525,7 @@ a {
     content: "";
     background-color: #eec643;
     height: 2px;
-    width: 50%;
+    width: 100%;
     position: absolute;
     display: block;
     top: -3px;
@@ -529,14 +534,17 @@ a {
     content: "";
     background-color: #eec643;
     height: 2px;
-    width: 50%;
+    width: 100%;
     position: absolute;
     display: block;
     bottom: -5px;
     left: -10px; }
   .page-map .map {
-    height: 470px; }
+    height: 470px;
+    padding-left: 0; }
   .page-map .form {
+    height: 570px;
+    position: relative;
     background-color: #f9fcfc;
     border: 2px solid #eec643; }
     .page-map .form__btn {
@@ -545,7 +553,8 @@ a {
     .page-map .form select {
       border-bottom: 1px solid #eec643; }
     .page-map .form h2 {
-      color: #eec643; }
+      color: #eec643;
+      font-size: 30px; }
     .page-map .form p {
       color: #021a23; }
 
@@ -605,7 +614,8 @@ a {
     .temp .form select {
       border-bottom: 1px solid #eec643; }
     .temp .form h2 {
-      color: #eec643; }
+      color: #eec643;
+      font-size: 30px; }
     .temp .form p {
       color: #021a23; }
 
@@ -698,7 +708,31 @@ a {
       background-color: #eec643; }
   .genres__card-title {
     margin: 0; }
-  @media (min-width: 1280px) {
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 85px;
+  width: 100%; }
+  .footer__logo {
+    color: #eec643; }
+  .footer__socials {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+    .footer__socials__list {
+      color: #021a23;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+    .footer__socials__item {
+      text-transform: uppercase;
+      margin-left: 15px; }
+    @media (min-width: 1280px) {
   .col-1 {
     width: 8.33%;
     -webkit-box-flex: 0;
