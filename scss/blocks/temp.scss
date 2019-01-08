@@ -2,6 +2,12 @@
 	color: $color-white;
 	position: relative;
 
+	h2 {
+		font-size: 50px;
+		margin-bottom: 30px;
+		margin-top: 0;
+	}
+
 	&__title {
 		position: absolute;
 		width: 100%;
@@ -47,7 +53,7 @@
 		width: 48%;
 		position: absolute;
 		display: block;
-		top: -5px;
+		top: -3px;
 		left: -10px;
 	}
 

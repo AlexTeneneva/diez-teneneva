@@ -1,9 +1,40 @@
 .page-map {
 	margin-top: 90px;
+	position: relative;
+
+	
+	&__mapblock {
+		display: flex;
+	}
 
 	h2 {
 		font-size: 50px;
+		margin: 0;
 	}
+
+	&__title:before {
+		content: "";
+		background-color: $color-main;
+		height: 2px;
+		width: 50%;
+		position: absolute;
+		display: block;
+		top: -3px;
+		left: -10px;
+	}
+
+	&__title:after {
+		content: "";
+		background-color: $color-main;
+		height: 2px;
+		width: 50%;
+		position: absolute;
+		display: block;
+		bottom: -5px;
+		left: -10px;
+	}
+
+	
 
 .map {
 	height: 470px;

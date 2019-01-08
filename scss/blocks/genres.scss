@@ -3,16 +3,19 @@
 	color: $color-white;
 	position: relative;
 	padding-top: 50px;
+	margin-bottom: 50px;
+
+	h2 {
+		font-size: 50px;
+	}
 
 	&__title {
 		color: $color-black;
 
-
-
 		@media (min-width: 1280px) {
 			position: absolute;
 			bottom: 30px;
-			left: 20px;
+			left: -50px;
 			writing-mode: tb-rl;
 			transform: rotate(180deg);
 
@@ -25,7 +28,7 @@
   display: block;
   height: 525px;
   width: 2px;
-  left: -15px;
+  left: -1px;
   background-color: $color-main;
   padding-bottom: 40px;
 
@@ -37,7 +40,7 @@
   display: block;
   height: 525px;
   width: 2px;
-  left: 35px;
+  left: 58px;
   background-color: $color-main;
   padding-top: 40px;
 }

@@ -23,7 +23,7 @@
 			@media (min-width: 1280px) {
 			position: absolute;
 			bottom: 0px;
-			left: -25px;
+			left: -50px;
 			writing-mode: tb-rl;
 			transform: rotate(180deg);
 			}
@@ -35,7 +35,7 @@
   display: block;
   height: 525px;
   width: 2px;
-  left: 0px;
+  left: 30px;
   background-color: $color-main;
   padding-bottom: 40px;
 
@@ -47,7 +47,7 @@
   display: block;
   height: 525px;
   width: 2px;
-  left: 95px;
+  left: 105px;
   background-color: $color-main;
   padding-top: 40px;
 }
