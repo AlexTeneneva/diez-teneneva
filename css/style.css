@@ -710,11 +710,7 @@ a {
     margin: 0; }
 
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 85px;
-  width: 100%; }
+  margin-top: 85px; }
   .footer__logo {
     color: #eec643; }
   .footer__socials {
@@ -732,7 +728,9 @@ a {
     .footer__socials__item {
       text-transform: uppercase;
       margin-left: 15px; }
-    @media (min-width: 1280px) {
+      .footer__socials__item a {
+        color: inherit; }
+      @media (min-width: 1280px) {
   .col-1 {
     width: 8.33%;
     -webkit-box-flex: 0;
