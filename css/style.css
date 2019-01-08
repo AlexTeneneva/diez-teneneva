@@ -418,34 +418,168 @@ a {
 
 .form {
   background-color: #faf5e4;
-  border: 1px solid #021a23;
-  height: 420px; }
+  border: 2px solid #021a23;
+  height: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .form h2,
+  .form p {
+    text-align: center; }
+  .form h2 {
+    font-weight: bold; }
   .form__btn {
     background-color: #021a23;
     color: #f9fcfc;
     height: 70px;
     width: 100%;
-    margin-top: 351px; }
+    font-size: 20px;
+    text-transform: uppercase;
+    border: none; }
+  .form input,
+  .form select {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #000; }
 
 .gallery {
-  color: #f9fcfc; }
-  .gallery__item--yang {
-    background-image: url(../img/video_card_img_2.jpg);
-    background-repeat: no-repeat; }
-  .gallery__item--calm {
-    background-image: url(../img/video_card_img_3.jpg);
-    background-repeat: no-repeat; }
-  .gallery__item--trofimov {
-    background-image: url(../img/video_card_img_4.jpg);
-    background-repeat: no-repeat; }
-  .gallery__item--cherry {
-    background-image: url(../img/video_card_img_1.jpg);
-    background-repeat: no-repeat; }
-  .gallery__item--offset {
-    margin-left: 100px; }
+  color: #f9fcfc;
+  position: relative;
+  padding-top: 50px; }
+  .gallery h2 {
+    font-size: 50px; }
+  .gallery p,
+  .gallery h3 {
+    padding: 0;
+    margin: 0;
+    padding-left: 10px; }
+  .gallery p {
+    padding-bottom: 10px; }
+  .gallery__title:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 525px;
+    width: 2px;
+    left: 0px;
+    background-color: #eec643;
+    padding-bottom: 40px; }
+  .gallery__title:after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 525px;
+    width: 2px;
+    left: 95px;
+    background-color: #eec643;
+    padding-top: 40px; }
+  .gallery__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .gallery__item--yang {
+      background-image: url(../img/video_card_img_2.jpg);
+      background-repeat: no-repeat;
+      height: 169px; }
+    .gallery__item--calm {
+      background-image: url(../img/video_card_img_3.jpg);
+      background-repeat: no-repeat;
+      height: 169px;
+      margin-top: 32px; }
+    .gallery__item--trofimov {
+      background-image: url(../img/video_card_img_4.jpg);
+      background-repeat: no-repeat;
+      height: 169px;
+      margin-top: 32px; }
+    .gallery__item--cherry {
+      background-image: url(../img/video_card_img_1.jpg);
+      background-repeat: no-repeat;
+      height: 569px;
+      margin-left: 100px; }
+  .gallery--offset {
+    margin-top: auto; }
 
-.map {
-  height: 400px; }
+.page-map {
+  margin-top: 90px; }
+  .page-map h2 {
+    font-size: 50px; }
+  .page-map .map {
+    height: 470px; }
+  .page-map .form {
+    background-color: #f9fcfc;
+    border: 2px solid #eec643; }
+    .page-map .form__btn {
+      background-color: #eec643; }
+    .page-map .form input,
+    .page-map .form select {
+      border-bottom: 1px solid #eec643; }
+    .page-map .form h2 {
+      color: #eec643; }
+    .page-map .form p {
+      color: #021a23; }
+
+.temp {
+  color: #f9fcfc;
+  position: relative; }
+  .temp__title {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0; }
+  .temp__card--offset {
+    margin-top: 100px; }
+  .temp__team {
+    background-image: url(../img/advantages_card_team.jpg);
+    background-repeat: no-repeat; }
+    .temp__team p {
+      width: 215px; }
+  .temp__result {
+    background-image: url(../img/advantages_card_result.jpg);
+    background-repeat: no-repeat; }
+    .temp__result p {
+      width: 188px; }
+  .temp__studio {
+    background-image: url(../img/advantages_card_studio.jpg);
+    background-repeat: no-repeat; }
+    .temp__studio p {
+      width: 233px; }
+  .temp__title:before {
+    content: "";
+    background-color: #eec643;
+    height: 2px;
+    width: 48%;
+    position: absolute;
+    display: block;
+    top: -5px;
+    left: -10px; }
+  .temp__title:after {
+    content: "";
+    background-color: #eec643;
+    height: 2px;
+    width: 48%;
+    position: absolute;
+    display: block;
+    bottom: -5px;
+    left: -10px; }
+  .temp .form {
+    background-color: #f9fcfc;
+    border: 2px solid #eec643; }
+    .temp .form__btn {
+      background-color: #eec643; }
+    .temp .form input,
+    .temp .form select {
+      border-bottom: 1px solid #eec643; }
+    .temp .form h2 {
+      color: #eec643; }
+    .temp .form p {
+      color: #021a23; }
 
 .main-nav {
   -webkit-box-flex: 1;
@@ -469,12 +603,12 @@ a {
   height: 770px; }
 
 .promo {
-  padding-bottom: 105px; }
+  margin-top: 105px; }
   .promo h1, .promo__text {
     color: #f9fcfc; }
 
 .logo {
-  padding-bottom: 30px; }
+  margin-top: 30px; }
 
 .genres {
   display: -webkit-box;
@@ -484,13 +618,13 @@ a {
   position: relative;
   padding-top: 50px; }
   .genres__title {
-    color: #000; }
+    color: #021a23; }
   .genres__title:before {
     content: "";
     position: absolute;
     display: block;
     height: 525px;
-    width: 1px;
+    width: 2px;
     left: -15px;
     background-color: #eec643;
     padding-bottom: 40px; }
@@ -499,7 +633,7 @@ a {
     position: absolute;
     display: block;
     height: 525px;
-    width: 1px;
+    width: 2px;
     left: 35px;
     background-color: #eec643;
     padding-top: 40px; }
@@ -510,26 +644,30 @@ a {
     margin-bottom: 30px;
     padding: 20px; }
     .genres__card--guitar {
-      background-image: url("../img/directions_card_guitar.jpg"); }
+      background-image: url("../img/directions_card_guitar.jpg");
+      background-repeat: no-repeat; }
+      .genres__card--guitar p {
+        width: 229px; }
     .genres__card--vocal {
-      background-image: url(../img/directions_card_vocal.jpg); }
+      background-image: url(../img/directions_card_vocal.jpg);
+      background-repeat: no-repeat; }
+      .genres__card--vocal p {
+        width: 192px; }
     .genres__card--fortepiano {
-      background-image: url(../img/directions_card_fortepiano.jpg); }
+      background-image: url(../img/directions_card_fortepiano.jpg);
+      background-repeat: no-repeat; }
+      .genres__card--fortepiano p {
+        width: 190px; }
     .genres__card--lectures {
-      background-image: url(../img/directions_card_lectures.jpg); }
+      background-image: url(../img/directions_card_lectures.jpg);
+      background-repeat: no-repeat; }
+      .genres__card--lectures p {
+        width: 204px; }
+    .genres__card--all {
+      background-color: #eec643; }
   .genres__card-title {
     margin: 0; }
-
-.guitar {
-  background-image: url("../img/directions_card_guitar.jpg"); }
-
-.vocal {
-  background-image: url(../img/directions_card_vocal.jpg); }
-
-.lectures {
-  background-image: url(../img/directions_card_lectures.jpg); }
-
-@media (min-width: 1280px) {
+  @media (min-width: 1280px) {
   .col-1 {
     width: 8.33%;
     -webkit-box-flex: 0;
@@ -582,6 +720,15 @@ a {
     width: 100%;
     padding-left: 15px;
     padding-right: 15px; }
+    .gallery__title {
+      position: absolute;
+      bottom: 0px;
+      left: -25px;
+      -webkit-writing-mode: tb-rl;
+          -ms-writing-mode: tb-rl;
+              writing-mode: tb-rl;
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg); }
       .genres__title {
         position: absolute;
         bottom: 30px;

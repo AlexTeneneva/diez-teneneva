@@ -5,7 +5,7 @@
 	padding-top: 50px;
 
 	&__title {
-		color: #000;
+		color: $color-black;
 
 
 
@@ -16,16 +16,6 @@
 			writing-mode: tb-rl;
 			transform: rotate(180deg);
 
-
-			// 1)
-			// развернуть transform rotate
-			// transform-origin 
-			// left
-			// bottom
-			
-			// 2)
-		  // writing-mode: lr ;
-		  // развернуть transform: rotate(180deg);
 		}
 	}
 
@@ -34,10 +24,11 @@
   position: absolute;
   display: block;
   height: 525px;
-  width: 1px;
+  width: 2px;
   left: -15px;
   background-color: $color-main;
   padding-bottom: 40px;
+
 }
 
 &__title:after {
@@ -45,7 +36,7 @@
   position: absolute;
   display: block;
   height: 525px;
-  width: 1px;
+  width: 2px;
   left: 35px;
   background-color: $color-main;
   padding-top: 40px;
@@ -67,39 +58,47 @@
 
 		&--guitar {
 			background-image: url("../img/directions_card_guitar.jpg");
+			background-repeat: no-repeat;
+
+			p {
+				width: 229px;
+			}
 		}
 
 		&--vocal {
 			background-image: url(../img/directions_card_vocal.jpg);
+			background-repeat: no-repeat;
+			
+			p {
+			width: 192px;
+		}
 		}
 
 		&--fortepiano {
 			background-image: url(../img/directions_card_fortepiano.jpg);
+			background-repeat: no-repeat;
+
+			p {
+				width: 190px;
+			}
 		}
 
 		&--lectures {
 			background-image: url(../img/directions_card_lectures.jpg);
+			background-repeat: no-repeat;
+
+			p {
+			width: 204px;
+			}
+		}
+
+		&--all {
+			background-color: $color-main;
 		}
 	}
 
 	&__card-title {
 		margin: 0;
 	}
-}
-
-.guitar {
-	background-image: url("../img/directions_card_guitar.jpg");
-}
-
-.vocal {
-	background-image: url(../img/directions_card_vocal.jpg);
-}
-
-// .fortepiano {
-// 	background-image: url(../img/directions_card_fortepiano.jpg);
-// }
-
-.lectures {
-	background-image: url(../img/directions_card_lectures.jpg);
 }
 

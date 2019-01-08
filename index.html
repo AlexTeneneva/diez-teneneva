@@ -33,9 +33,15 @@
 				<form action="" class="form">
 					<h2 class="form__title">Вводный урок</h2>
 					<p class="form__text">Попробуй любые направления  бесплатно</p>
-					<input type="text" class="form__input">
-					<input type="text" class="form__input">
-					<select class=form__select></select>
+					<input type="text" value="Имя" class="form__input">
+					<input type="text" value="Телефон" class="form__input">
+					<select class="form__select">
+					<option selected disabled>Направления</option>
+					<option value="Лекции">Лекции</option>
+			    <option value="Гитара">Гитара</option>
+			    <option value="Вокал">Вокал</option>
+			    <option value="Фортепиано">Фортепиано</option>
+					</select>
 					<button class="form__btn btn">Записаться</button>
 				</form>
 			</div>
@@ -75,7 +81,7 @@
 				</div>
 			</div>
 			<div class="col-3">	
-				<div class="genres__card"> 
+				<div class="genres__card genres__card--all"> 
 					<h3 class="genres__card-title">Все направления</h3>
 			</div>
 		</div>
@@ -84,30 +90,36 @@
 
 <section class="temp">
 	<div class="container">
-				<h2 class="temp-title">Задаем темп</h2>
+		<h2 class="temp__title">Задаем темп</h2>
 		<div class="row">
 
-				<div class="temp-items col-3">
+				<div class="temp__team temp__card temp__card--offset col-3">
 					<h3>Состав</h3>
 					<p>Тебя будут обучать провессионалы с высшим музыкальным образованием</p>
 				</div>
-				<div class="temp-items col-3">
+				<div class="temp__result temp__card temp__card--offset col-3">
 					<h3>Результат</h3>
 					<p>Выступи на отчетном концерте через 3 месяца обучения</p>
 				</div>
 		
-				<div class="temp-items col-3">
+				<div class="temp__studio temp__card col-3">
 					<h3>Студия</h3>
 					<p>Запиши свою песню в нашей студии звукозаписи, одна песня в месяц бесплатно</p>
 				</div>
 
-				<div class="temp-items col-3">
+				<div class="temp__form temp__card col-3">
 					<form action="" class="form">
 						<h2 class="form__title">Вводный урок</h2>
 						<p class="form__text">Попробуй любые направления  бесплатно</p>
-						<input type="text" class="form__input">
-						<input type="text" class="form__input">
-						<select class=form__select></select>
+						<input type="text" placeholder="Имя" class="form__input">
+						<input type="text" placeholder="Телефон" class="form__input">
+						<select class="form__select">
+						<option selected disabled>Направления</option>
+						<option value="Лекции">Лекции</option>
+				    <option value="Гитара">Гитара</option>
+				    <option value="Вокал">Вокал</option>
+				    <option value="Фортепиано">Фортепиано</option>
+						</select>
 						<button class="form__btn btn">Записаться</button>
 					</form>
 				</div>
@@ -122,24 +134,30 @@
 				<h2>В стенах школы</h2>
 			</div>
 		<div class="row">
-				<div class="col-8 gallery__item--cherry gallery__item--offset">
+				<div class="col-8 gallery__item--cherry">
 					<h3>Зимняя вишня</h3>
 					<p>Заключительный зимний концерт 2017 года
 выступало 97 учеников</p>
 				</div>
 				
 			<div class="gallery-list col-3">
-					<div class="gallery__item--yang">
-						<h3>Янг Чжо</h3>
-						<p>Репетиция сольной партии скрипки</p>
+					<div class="gallery__item gallery__item--yang" style="">
+						<div class="gallery--offset">
+							<h3>Янг Чжо</h3>
+							<p>Репетиция сольной партии скрипки</p>
+						</div>
 					</div>
-					<div class="gallery__item--calm">
+					<div class="gallery__item gallery__item--calm">
+						<div class="gallery--offset"> 
 						<h3>Летний штиль</h3>
 						<p>За кулисами концерта</p>
+						</div>
 					</div>
-					<div class="gallery__item--trofimov">
+					<div class="gallery__item gallery__item--trofimov">
+						<div class="gallery--offset">
 						<h3>Сергей Трофимов</h3>
 						<p>ЛЮБЭ-Выйду в поле с конем</p>
+						</div>
 					</div>
 				</div>
 			
@@ -171,7 +189,22 @@
 					</div>
 					
 			</div>
-			<div class="form col-3"></div>
+			<div class="col-3">
+				<form action="" class="form">
+					<h2 class="form__title">Вводный урок</h2>
+					<p class="form__text">Попробуй любые направления  бесплатно</p>
+					<input type="text" placeholder="Имя" class="form__input">
+					<input type="text" placeholder="Телефон" class="form__input">
+					<select class="form__select">
+					<option selected disabled>Направления</option>
+					<option value="Лекции">Лекции</option>
+			    <option value="Гитара">Гитара</option>
+			    <option value="Вокал">Вокал</option>
+			    <option value="Фортепиано">Фортепиано</option>
+					</select>
+					<button class="form__btn btn">Записаться</button>
+				</form>
+			</div>
 		</div>
 	</div>
 </section>

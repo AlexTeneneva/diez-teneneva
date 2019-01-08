@@ -1,0 +1,87 @@
+.temp {
+	color: $color-white;
+	position: relative;
+
+	&__title {
+		position: absolute;
+		width: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	&__card {
+
+		&--offset {
+			margin-top: 100px;
+		}
+	}
+
+	&__team {
+		background-image: url(../img/advantages_card_team.jpg);
+		background-repeat: no-repeat;
+		p {
+			width: 215px;
+		}
+	}
+	
+	&__result {
+		background-image: url(../img/advantages_card_result.jpg);
+		background-repeat: no-repeat;
+		p {
+			width: 188px;
+		}
+	}
+
+	&__studio {
+		background-image: url(../img/advantages_card_studio.jpg);
+		background-repeat: no-repeat;
+		p {
+			width: 233px;
+		}
+	}
+
+	&__title:before {
+		content: "";
+		background-color: $color-main;
+		height: 2px;
+		width: 48%;
+		position: absolute;
+		display: block;
+		top: -5px;
+		left: -10px;
+	}
+
+	&__title:after {
+		content: "";
+		background-color: $color-main;
+		height: 2px;
+		width: 48%;
+		position: absolute;
+		display: block;
+		bottom: -5px;
+		left: -10px;
+	}
+
+.form {
+	background-color: $color-white;
+	border: 2px solid $color-main;
+
+	&__btn {
+		background-color: $color-main;
+	}
+
+	input,
+	select {
+		border-bottom: 1px solid $color-main;
+	}
+
+	h2 {
+		color: $color-main;
+	}
+
+	p {
+		color: $color-black;
+	}
+}
+
+}
