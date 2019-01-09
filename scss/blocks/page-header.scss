@@ -1,3 +1,8 @@
 .page-header {
 	height: 770px;
+
+	@media (min-width: $screen-sm) {
+		height: auto;
+	}
+
 }

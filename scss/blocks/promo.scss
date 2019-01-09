@@ -1,6 +1,47 @@
 .promo {
 	margin-top: 105px;
 
+ @media (min-width: $screen-sm) {
+ 	width: 100%;
+
+		h1 {
+			width: 240px;
+			margin-left: 30px;
+			font-size: 30px;
+			margin-top: 0;
+			}
+
+		p {
+			width: 190px;
+			padding-left: 30px;
+		}
+
+		&__btn {
+			width: 288px;
+			height: 60px;
+			background-color: $color-main;
+			margin-left: 30px;
+			padding: 18px;
+			margin-bottom: 32px;
+			
+			a {
+				text-align: center;
+			}
+
+			h2 {
+				color: $color-white;
+				margin: 0;
+			}
+		}
+
+	}
+
+	&__btn {
+		@media (min-width: $screen-lg) {
+			display: none;
+		}
+	}
+
 	h1,
 	&__text {
 	color: $color-white;

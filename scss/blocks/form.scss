@@ -6,6 +6,11 @@
 	flex-direction: column;
 	justify-content: space-between;
 
+	@media (min-width: $screen-sm) {
+		display: none;
+		
+	}
+
 	h2,
 	p {
 		text-align: center;

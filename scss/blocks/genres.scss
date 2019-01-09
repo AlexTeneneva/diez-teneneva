@@ -18,32 +18,37 @@
 			left: -50px;
 			writing-mode: tb-rl;
 			transform: rotate(180deg);
+			
+			&__title:before {
+		  content: "";
+		  position: absolute;
+		  display: block;
+		  height: 525px;
+		  width: 2px;
+		  left: -1px;
+		  background-color: $color-main;
+		  padding-bottom: 40px;
+
+			}
+
+			&__title:after {
+			  content: "";
+			  position: absolute;
+			  display: block;
+			  height: 525px;
+			  width: 2px;
+			  left: 58px;
+			  background-color: $color-main;
+			  padding-top: 40px;
+			}
+
+		h2 {
+			font-size: 30px;
+		}
 
 		}
 	}
 
-	&__title:before {
-  content: "";
-  position: absolute;
-  display: block;
-  height: 525px;
-  width: 2px;
-  left: -1px;
-  background-color: $color-main;
-  padding-bottom: 40px;
-
-}
-
-&__title:after {
-  content: "";
-  position: absolute;
-  display: block;
-  height: 525px;
-  width: 2px;
-  left: 58px;
-  background-color: $color-main;
-  padding-top: 40px;
-}
 
 
 
