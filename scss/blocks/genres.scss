@@ -164,17 +164,21 @@
 			}			
 		}
 
+		&--relative {
+			position: relative;
+		}
+
 		&--all {
 			background-color: $color-main;				
-			width: 23%;
+			width: 20%;
 			padding: 25px;
 			color: $color-black;
 			position: relative;
 			writing-mode: tb-rl;
 			transform: rotate(180deg);
-			position: relative;
-			left: 255px;
-			top: -173px;
+			position: absolute;
+			left: 220px;
+			top: -175px;
 
 
 			h3 {

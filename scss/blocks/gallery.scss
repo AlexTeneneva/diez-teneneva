@@ -23,6 +23,7 @@
 		}
 
 		&__title {
+			margin-left: 30px;
 
 		&:before {
 		content: "";
@@ -32,7 +33,7 @@
 		position: absolute;
 		display: block;
 		top: -3px;
-		left: -10px;
+		left: 16px;
 	}
 
 		&:after {
@@ -43,7 +44,7 @@
 			position: absolute;
 			display: block;
 			top: 34px;
-			left: -10px;
+			left: 16px;
 		}
 
 				@media (min-width: $screen-lg) {
@@ -123,18 +124,46 @@
 		&--cherry {
 			background-image: url(../img/video_card_img_1.jpg);
 			background-repeat: no-repeat;
+			background-size: cover;
 			height: 187px;
 			padding-left: 25px;
 			padding-right: 15px;
-			
+			margin-left: 30px;	
+			position: relative;
+
+			h3:after {
+				content: '';
+				background-image: url(../img/play_button.png);
+				position: absolute;
+				left: 0;
+				right: 0;
+				margin: auto;
+				top: 40%;
+				background-size: cover;
+			}
+
 
 			@media (min-width: $screen-lg) {
 			height: 569px;				
 			margin-left: 100px;
 			}
-
 			}
+
+		&--text1200 {
+			display: none;
+			@media (min-width: $screen-lg) {
+				display: flex;
+			}
+		}	
+
+		&--text320 {
+			@media (min-width: $screen-lg) {
+			display: none;
+		}
+		}
 	}
+
+
 	&--offset {
 		margin-top: auto;
 	}
