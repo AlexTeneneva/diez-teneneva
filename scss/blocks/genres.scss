@@ -1,45 +1,85 @@
 .genres {
 	display: flex;
 	color: $color-white;
-	position: relative;
+	padding-left: 30px;
+
+	@media (min-width: $screen-lg) {
 	padding-top: 50px;
+	padding-left: 0;
+	position: relative;
 	margin-bottom: 50px;
 
+	}
+
 	h2 {
-		font-size: 50px;
+		font-size: 30px;
+		@media (min-width: $screen-lg) {
+			font-size: 50px;
+		}
+	}
+
+	h3 {
+		font-size: 18px;
+		@media (min-width: $screen-lg) {
+			font-size: 30px;
+		}
 	}
 
 	&__title {
 		color: $color-black;
+		width: 80%;
 
-		@media (min-width: 1280px) {
+		&:before {
+		content: "";
+		background-color: $color-main;
+		height: 1px;
+		width: 130%;
+		position: absolute;
+		display: block;
+		top: -3px;
+		left: -10px;
+	}
+
+	&:after {
+		content: "";
+		background-color: $color-main;
+		height: 1px;
+		width: 130%;
+		position: absolute;
+		display: block;
+		bottom: -5px;
+		left: -10px;
+		}
+
+		@media (min-width: $screen-lg) {
 			position: absolute;
 			bottom: 30px;
 			left: -50px;
 			writing-mode: tb-rl;
 			transform: rotate(180deg);
-			
-			&__title:before {
+
+			&:before {
 		  content: "";
 		  position: absolute;
 		  display: block;
 		  height: 525px;
 		  width: 2px;
-		  left: -1px;
+		  right: -10px;
 		  background-color: $color-main;
 		  padding-bottom: 40px;
 
 			}
 
-			&__title:after {
+			&:after {
 			  content: "";
 			  position: absolute;
 			  display: block;
 			  height: 525px;
 			  width: 2px;
-			  left: 58px;
+			  right: 62px;
 			  background-color: $color-main;
 			  padding-top: 40px;
+			  bottom: -58px;
 			}
 
 		h2 {
@@ -54,37 +94,53 @@
 
 	&__card-inner {
 
+	@media (min-width: $screen-lg) {
 		&--offset {
 			margin-left: 100px;
 		}
 	}
+	}
 
 	&__card {
-		height: 270px;
+		height: 145px;
 		margin-bottom: 30px;
 		padding: 20px;
+		background-size: cover;
+
+		@media (min-width: $screen-lg) {
+			height: 270px;
+		}		
 
 		&--guitar {
 			background-image: url("../img/directions_card_guitar.jpg");
 			background-repeat: no-repeat;
-
-			p {
-				width: 229px;
-			}
+			padding: 15px;
+			padding-right: 25px;
+			
 		}
 
 		&--vocal {
 			background-image: url(../img/directions_card_vocal.jpg);
 			background-repeat: no-repeat;
+			background-size: cover;
 			
-			p {
-			width: 192px;
-		}
+			@media (min-width: $screen-lg) {
+				padding-right: 150px;
+			}
+
+		// 	p {
+		// 	width: 192px;
+		// }
 		}
 
 		&--fortepiano {
 			background-image: url(../img/directions_card_fortepiano.jpg);
 			background-repeat: no-repeat;
+			width: 65%;
+			@media (min-width: $screen-lg) {
+				width: 100%;
+			}
+
 
 			p {
 				width: 190px;
@@ -94,14 +150,40 @@
 		&--lectures {
 			background-image: url(../img/directions_card_lectures.jpg);
 			background-repeat: no-repeat;
+			display: none;
 
+			h3 {
+			font-weight: normal;
+			}
 			p {
 			width: 204px;
 			}
+
+			@media (min-width: $screen-lg) {
+				display: block;
+			}			
 		}
 
 		&--all {
-			background-color: $color-main;
+			background-color: $color-main;				
+			width: 23%;
+			padding: 25px;
+			color: $color-black;
+			position: relative;
+			writing-mode: tb-rl;
+			transform: rotate(180deg);
+
+			h3 {
+			font-weight: normal;
+			}
+
+			@media (min-width: $screen-lg) {
+				width: 100%;
+				color: $color-white;
+				writing-mode: vertical-rl;	
+				transform: rotate(270deg);
+				
+			}
 		}
 	}
 

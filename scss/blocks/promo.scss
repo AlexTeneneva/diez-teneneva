@@ -1,20 +1,46 @@
 .promo {
-	margin-top: 105px;
+	margin-top: 55px;
+
+	h1 {
+		font-size: 30px;
+		@media (min-width: $screen-lg) {
+			font-size: 50px;
+		}
+
+	}
+
+	&--offset {
+		padding-right: 30px;
+		@media (min-width: $screen-lg) {
+			padding-right: 220px;
+		}
+	}
+
+	&__tatle {
+		display: none;
+		@media (min-width: $screen-lg) {
+			display: block;			
+		&--mobail {
+			display: none;
+		}
+
+		}
+
+	}
 
  @media (min-width: $screen-sm) {
  	width: 100%;
 
 		h1 {
-			width: 240px;
-			margin-left: 30px;
-			font-size: 30px;
+			margin: 0;
 			margin-top: 0;
+			margin-left: 30px;
 			}
 
-		p {
-			width: 190px;
+		p {			
 			padding-left: 30px;
 		}
+
 
 		&__btn {
 			width: 288px;

@@ -1,11 +1,15 @@
 .temp {
 	color: $color-white;
 	position: relative;
+	padding-left: 15px;
 
 	h2 {
-		font-size: 50px;
+		font-size: 30px;
 		margin-bottom: 30px;
 		margin-top: 0;
+		@media (min-width: $screen-lg) {
+			font-size: 50px;
+		}
 	}
 
 	&__title {
@@ -17,14 +21,34 @@
 
 	&__card {
 
+		&--fullscreen {
+			display: none;
+			@media (min-width: $screen-lg) {
+				display: block;
+			}
+		}
+
+		&--mobile {
+			@media (min-width: $screen-lg)  {
+				display: none;
+			}
+		}
+
 		&--offset {
+			margin-top: 0px;
+			margin-bottom: 15px;
+			@media (min-width: $screen-lg) {
 			margin-top: 100px;
+			margin-bottom: 0;
+			}
 		}
 	}
 
 	&__team {
 		background-image: url(../img/advantages_card_team.jpg);
 		background-repeat: no-repeat;
+		margin-top: 60px;
+
 		p {
 			width: 215px;
 		}
@@ -33,6 +57,7 @@
 	&__result {
 		background-image: url(../img/advantages_card_result.jpg);
 		background-repeat: no-repeat;
+		margin-top: 20;
 		p {
 			width: 188px;
 		}
@@ -47,6 +72,29 @@
 	}
 
 	&__title:before {
+		content: "";
+		background-color: $color-main;
+		height: 1px;
+		width: 75%;
+		position: absolute;
+		display: block;
+		top: -3px;
+		left: -10px;
+	}
+
+	&__title:after {
+		content: "";
+		background-color: $color-main;
+		height: 1px;
+		width: 75%;
+		position: absolute;
+		display: block;
+		bottom: -5px;
+		left: -10px;
+	}
+
+	@media (min-width: $screen-lg) {
+		&__title:before {
 		content: "";
 		background-color: $color-main;
 		height: 2px;
@@ -67,10 +115,12 @@
 		bottom: -5px;
 		left: -10px;
 	}
+	}	
 
 .form {
 	background-color: $color-white;
 	border: 2px solid $color-main;
+	height: 567px;
 
 	&__btn {
 		background-color: $color-main;
@@ -84,6 +134,7 @@
 	h2 {
 		color: $color-main;
 		font-size: 30px;
+
 	}
 
 	p {

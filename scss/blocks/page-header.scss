@@ -1,6 +1,8 @@
 .page-header {
 	height: 770px;
-
+	background-image: url(../img/bg_main.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 	@media (min-width: $screen-sm) {
 		height: auto;
 	}

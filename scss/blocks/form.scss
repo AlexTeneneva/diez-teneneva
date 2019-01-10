@@ -6,8 +6,10 @@
 	flex-direction: column;
 	justify-content: space-between;
 
-	@media (min-width: $screen-sm) {
-		display: none;
+	display: none;
+
+	@media (min-width: $screen-lg) {
+		display: flex;
 		
 	}
 

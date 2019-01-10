@@ -339,9 +339,6 @@ template {
       flex-shrink: 0;
   width: 100%; }
 
-.page-header {
-  background-image: url(../img/bg_main.jpg); }
-
 /*.demo-block {
   padding: 0.5em 1em;
   background-color: #bada55;
@@ -359,6 +356,21 @@ template {
 .main-nav__item {
 	margin-left: 10px;
 }*/
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%; }
 
 @-ms-viewport {
   width: device-width; }
@@ -429,7 +441,8 @@ a {
           flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  display: none; }
   .form h2,
   .form p {
     text-align: center; }
@@ -457,7 +470,7 @@ a {
   position: relative;
   padding-top: 50px; }
   .gallery h2 {
-    font-size: 50px; }
+    font-size: 30px; }
   .gallery p,
   .gallery h3 {
     padding: 0;
@@ -465,6 +478,24 @@ a {
     padding-left: 10px; }
   .gallery p {
     padding-bottom: 10px; }
+  .gallery__title__title:before {
+    content: "";
+    background-color: #eec643;
+    height: 1px;
+    width: 75%;
+    position: absolute;
+    display: block;
+    top: -3px;
+    left: -10px; }
+  .gallery__title__title:after {
+    content: "";
+    background-color: #eec643;
+    height: 1px;
+    width: 75%;
+    position: absolute;
+    display: block;
+    bottom: -5px;
+    left: -10px; }
   .gallery__title:before {
     content: "";
     position: absolute;
@@ -560,9 +591,10 @@ a {
 
 .temp {
   color: #f9fcfc;
-  position: relative; }
+  position: relative;
+  padding-left: 15px; }
   .temp h2 {
-    font-size: 50px;
+    font-size: 30px;
     margin-bottom: 30px;
     margin-top: 0; }
   .temp__title {
@@ -570,16 +602,21 @@ a {
     width: 100%;
     top: 0;
     left: 0; }
+  .temp__card--fullscreen {
+    display: none; }
   .temp__card--offset {
-    margin-top: 100px; }
+    margin-top: 0px;
+    margin-bottom: 15px; }
   .temp__team {
     background-image: url(../img/advantages_card_team.jpg);
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    margin-top: 60px; }
     .temp__team p {
       width: 215px; }
   .temp__result {
     background-image: url(../img/advantages_card_result.jpg);
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    margin-top: 20; }
     .temp__result p {
       width: 188px; }
   .temp__studio {
@@ -590,8 +627,8 @@ a {
   .temp__title:before {
     content: "";
     background-color: #eec643;
-    height: 2px;
-    width: 48%;
+    height: 1px;
+    width: 75%;
     position: absolute;
     display: block;
     top: -3px;
@@ -599,15 +636,16 @@ a {
   .temp__title:after {
     content: "";
     background-color: #eec643;
-    height: 2px;
-    width: 48%;
+    height: 1px;
+    width: 75%;
     position: absolute;
     display: block;
     bottom: -5px;
     left: -10px; }
   .temp .form {
     background-color: #f9fcfc;
-    border: 2px solid #eec643; }
+    border: 2px solid #eec643;
+    height: 567px; }
     .temp .form__btn {
       background-color: #eec643; }
     .temp .form input,
@@ -622,7 +660,8 @@ a {
 .main-nav {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
-          flex-grow: 1; }
+          flex-grow: 1;
+  display: none; }
   .main-nav__item {
     margin-left: 15px;
     color: #021a23; }
@@ -638,56 +677,98 @@ a {
             justify-content: flex-end; }
 
 .page-header {
-  height: 770px; }
+  height: 770px;
+  background-image: url(../img/bg_main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .promo {
-  margin-top: 105px; }
+  margin-top: 55px; }
+  .promo h1 {
+    font-size: 30px; }
+  .promo--offset {
+    padding-right: 30px; }
+  .promo__tatle {
+    display: none; }
   .promo h1, .promo__text {
     color: #f9fcfc; }
 
 .logo {
-  margin-top: 30px; }
+  margin-top: 50px;
+  margin-left: 40px; }
 
 .genres {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: #f9fcfc;
-  position: relative;
-  padding-top: 50px;
-  margin-bottom: 50px; }
+  padding-left: 30px; }
   .genres h2 {
-    font-size: 50px; }
+    font-size: 30px; }
+  .genres h3 {
+    font-size: 18px; }
   .genres__title {
-    color: #021a23; }
-  .genres__card-inner--offset {
-    margin-left: 100px; }
+    color: #021a23;
+    width: 80%; }
+    .genres__title:before {
+      content: "";
+      background-color: #eec643;
+      height: 1px;
+      width: 130%;
+      position: absolute;
+      display: block;
+      top: -3px;
+      left: -10px; }
+    .genres__title:after {
+      content: "";
+      background-color: #eec643;
+      height: 1px;
+      width: 130%;
+      position: absolute;
+      display: block;
+      bottom: -5px;
+      left: -10px; }
   .genres__card {
-    height: 270px;
+    height: 145px;
     margin-bottom: 30px;
-    padding: 20px; }
+    padding: 20px;
+    background-size: cover; }
     .genres__card--guitar {
       background-image: url("../img/directions_card_guitar.jpg");
-      background-repeat: no-repeat; }
-      .genres__card--guitar p {
-        width: 229px; }
+      background-repeat: no-repeat;
+      padding: 15px;
+      padding-right: 25px; }
     .genres__card--vocal {
       background-image: url(../img/directions_card_vocal.jpg);
-      background-repeat: no-repeat; }
-      .genres__card--vocal p {
-        width: 192px; }
+      background-repeat: no-repeat;
+      background-size: cover; }
     .genres__card--fortepiano {
       background-image: url(../img/directions_card_fortepiano.jpg);
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      width: 65%; }
       .genres__card--fortepiano p {
         width: 190px; }
     .genres__card--lectures {
       background-image: url(../img/directions_card_lectures.jpg);
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      display: none; }
+      .genres__card--lectures h3 {
+        font-weight: normal; }
       .genres__card--lectures p {
         width: 204px; }
     .genres__card--all {
-      background-color: #eec643; }
+      background-color: #eec643;
+      width: 23%;
+      padding: 25px;
+      color: #021a23;
+      position: relative;
+      -webkit-writing-mode: tb-rl;
+          -ms-writing-mode: tb-rl;
+              writing-mode: tb-rl;
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg); }
+      .genres__card--all h3 {
+        font-weight: normal; }
   .genres__card-title {
     margin: 0; }
 
@@ -713,21 +794,15 @@ a {
       .footer__socials__item a {
         color: inherit; }
       @media (min-width: 320px) {
-    .form {
-      display: none; }
-    .main-nav {
-      display: none; }
     .page-header {
       height: auto; }
     .promo {
       width: 100%; }
       .promo h1 {
-        width: 240px;
-        margin-left: 30px;
-        font-size: 30px;
-        margin-top: 0; }
+        margin: 0;
+        margin-top: 0;
+        margin-left: 30px; }
       .promo p {
-        width: 190px;
         padding-left: 30px; }
       .promo__btn {
         width: 288px;
@@ -740,13 +815,8 @@ a {
           text-align: center; }
         .promo__btn h2 {
           color: #f9fcfc;
-          margin: 0; }
-    .logo {
-      margin-left: 30px; } }
+          margin: 0; } }
       @media (min-width: 1200px) {
-    .promo__btn {
-      display: none; } }
-      @media (min-width: 1280px) {
   .col-1 {
     width: 8.33%;
     -webkit-box-flex: 0;
@@ -799,6 +869,12 @@ a {
     width: 100%;
     padding-left: 15px;
     padding-right: 15px; }
+    .form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .gallery h2 {
+        font-size: 50px; }
     .gallery__title {
       position: absolute;
       bottom: 0px;
@@ -808,6 +884,57 @@ a {
               writing-mode: tb-rl;
       -webkit-transform: rotate(180deg);
               transform: rotate(180deg); }
+      .temp h2 {
+        font-size: 50px; }
+      .temp__card--fullscreen {
+        display: block; }
+    .temp__card--mobile {
+      display: none; }
+      .temp__card--offset {
+        margin-top: 100px;
+        margin-bottom: 0; }
+    .temp__title:before {
+      content: "";
+      background-color: #eec643;
+      height: 2px;
+      width: 48%;
+      position: absolute;
+      display: block;
+      top: -3px;
+      left: -10px; }
+    .temp__title:after {
+      content: "";
+      background-color: #eec643;
+      height: 2px;
+      width: 48%;
+      position: absolute;
+      display: block;
+      bottom: -5px;
+      left: -10px; }
+    .main-nav {
+      display: block; }
+      .promo h1 {
+        font-size: 50px; }
+      .promo--offset {
+        padding-right: 220px; }
+      .promo__tatle {
+        display: block; }
+        .promo__tatle--mobail {
+          display: none; }
+    .promo__btn {
+      display: none; }
+    .logo {
+      margin-left: 40px;
+      margin-top: 10px; }
+    .genres {
+      padding-top: 50px;
+      padding-left: 0;
+      position: relative;
+      margin-bottom: 50px; }
+      .genres h2 {
+        font-size: 50px; }
+      .genres h3 {
+        font-size: 30px; }
       .genres__title {
         position: absolute;
         bottom: 30px;
@@ -817,25 +944,44 @@ a {
                 writing-mode: tb-rl;
         -webkit-transform: rotate(180deg);
                 transform: rotate(180deg); }
-        .genres__title__title:before {
+        .genres__title:before {
           content: "";
           position: absolute;
           display: block;
           height: 525px;
           width: 2px;
-          left: -1px;
+          right: -10px;
           background-color: #eec643;
           padding-bottom: 40px; }
-        .genres__title__title:after {
+        .genres__title:after {
           content: "";
           position: absolute;
           display: block;
           height: 525px;
           width: 2px;
-          left: 58px;
+          right: 62px;
           background-color: #eec643;
-          padding-top: 40px; }
+          padding-top: 40px;
+          bottom: -58px; }
         .genres__title h2 {
-          font-size: 30px; } }
+          font-size: 30px; }
+    .genres__card-inner--offset {
+      margin-left: 100px; }
+      .genres__card {
+        height: 270px; }
+        .genres__card--vocal {
+          padding-right: 150px; }
+        .genres__card--fortepiano {
+          width: 100%; }
+        .genres__card--lectures {
+          display: block; }
+        .genres__card--all {
+          width: 100%;
+          color: #f9fcfc;
+          -webkit-writing-mode: vertical-rl;
+              -ms-writing-mode: tb-rl;
+                  writing-mode: vertical-rl;
+          -webkit-transform: rotate(270deg);
+                  transform: rotate(270deg); } }
 
 /*# sourceMappingURL=style.css.map */
