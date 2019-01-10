@@ -73,6 +73,7 @@
 			  left: 105px;
 			  background-color: $color-main;
 			  padding-top: 40px;
+			  top: 0;
 			}
 		}
 	}
@@ -82,11 +83,17 @@
 		&__item {
 		display: flex;
 		flex-wrap: wrap;
+
 	
 		&--yang {
 			background-image: url(../img/video_card_img_2.jpg);
 			background-repeat: no-repeat;
 			height: 169px;
+			display: none;
+			@media (min-width: $screen-lg) {
+				display: flex;
+			}
+
 		}
 		
 		&--calm {
@@ -94,6 +101,11 @@
 			background-repeat: no-repeat;
 			height: 169px;
 			margin-top: 32px;
+			display: none;
+			@media (min-width: $screen-lg) {
+				display: flex;
+			}
+
 		}
 
 		&--trofimov {
@@ -101,15 +113,27 @@
 			background-repeat: no-repeat;
 			height: 169px;
 			margin-top: 32px;
+			display: none;
+			@media (min-width: $screen-lg) {
+				display: flex;
+			}
+
 		}
 
 		&--cherry {
 			background-image: url(../img/video_card_img_1.jpg);
 			background-repeat: no-repeat;
-			height: 569px;
+			height: 187px;
+			padding-left: 25px;
+			padding-right: 15px;
+			
+
+			@media (min-width: $screen-lg) {
+			height: 569px;				
 			margin-left: 100px;
-			flex-grow: 1;
-		}
+			}
+
+			}
 	}
 	&--offset {
 		margin-top: auto;

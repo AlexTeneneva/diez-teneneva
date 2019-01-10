@@ -1,5 +1,9 @@
 .footer {
-	margin-top: 85px;
+	margin-top: 0;
+
+	@media (min-width: $screen-lg) {
+	margin-top: 85px;		
+	}
 
 	&__logo {
 		color: $color-main;

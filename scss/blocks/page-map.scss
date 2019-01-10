@@ -1,7 +1,9 @@
 .page-map {
-	margin-top: 90px;
+	margin-top: 33px;
 
-	
+	@media (min-width: $screen-lg) {
+	margin-top: 90px;		
+	}
 
 	&__contact {
 		margin-bottom: 15px;
@@ -9,17 +11,7 @@
 		@media (min-width: $screen-lg){
 		display: flex;
 		margin-bottom: 45px;
-
-
 		}
-	}
-
-	&__address {
-		padding-top: 30px;
-		@media (min-width: $screen-lg) {
-		padding-top: 10px;
-	}
-	}
 
 	h2 {
 		font-size: 30px;
@@ -29,6 +21,15 @@
 		font-size: 50px;		
 		}
 	}
+	}
+
+	&__address {
+		padding-top: 30px;
+		@media (min-width: $screen-lg) {
+		padding-top: 10px;
+	}
+	}
+
 
 	&__title {
 		width: 80%;
@@ -93,4 +94,8 @@
 		color: $color-black;
 	}
 }
+.btn-mobail {
+	margin-top: 15px;
+}
+
 }
