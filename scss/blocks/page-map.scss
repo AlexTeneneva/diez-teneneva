@@ -4,39 +4,63 @@
 	
 
 	&__contact {
+		margin-bottom: 15px;
+
+		@media (min-width: $screen-lg){
 		display: flex;
 		margin-bottom: 45px;
+
+
+		}
 	}
 
 	&__address {
+		padding-top: 30px;
+		@media (min-width: $screen-lg) {
 		padding-top: 10px;
+	}
 	}
 
 	h2 {
-		font-size: 50px;
+		font-size: 30px;
 		margin: 0;
+
+	@media (min-width: $screen-lg) {
+		font-size: 50px;		
+		}
 	}
+
+	&__title {
+		width: 80%;
+	}
+
 
 	&__title:before {
 		content: "";
 		background-color: $color-main;
-		height: 2px;
+		height: 1px;
 		width: 100%;
 		position: absolute;
 		display: block;
 		top: -3px;
 		left: -10px;
+		@media (min-width: $screen-lg) {
+			height: 2px;
+		}
 	}
 
 	&__title:after {
 		content: "";
 		background-color: $color-main;
-		height: 2px;
+		height: 1px;
 		width: 100%;
 		position: absolute;
 		display: block;
 		bottom: -5px;
 		left: -10px;
+		@media (min-width: $screen-lg) {
+			height: 2px;
+		}
 	}
 
 	

@@ -1,12 +1,16 @@
 .promo {
 	margin-top: 55px;
 
+	h1,
+	&__text {
+	color: $color-white;
+	}
+
 	h1 {
 		font-size: 30px;
 		@media (min-width: $screen-lg) {
 			font-size: 50px;
 		}
-
 	}
 
 	&--offset {
@@ -20,12 +24,10 @@
 		display: none;
 		@media (min-width: $screen-lg) {
 			display: block;			
-		&--mobail {
-			display: none;
+			&--mobail {
+				display: none;
+				}
 		}
-
-		}
-
 	}
 
  @media (min-width: $screen-sm) {
@@ -40,37 +42,33 @@
 		p {			
 			padding-left: 30px;
 		}
-
-
-		&__btn {
-			width: 288px;
-			height: 60px;
-			background-color: $color-main;
-			margin-left: 30px;
-			padding: 18px;
-			margin-bottom: 32px;
-			
-			a {
-				text-align: center;
-			}
-
-			h2 {
-				color: $color-white;
-				margin: 0;
-			}
-		}
-
-	}
-
-	&__btn {
-		@media (min-width: $screen-lg) {
-			display: none;
-		}
-	}
-
-	h1,
-	&__text {
-	color: $color-white;
-	}
-
 }
+}
+
+	// 	&__btn {
+	// 		width: 288px;
+	// 		height: 60px;
+	// 		background-color: $color-main;
+	// 		margin-left: 30px;
+	// 		padding: 18px;
+	// 		margin-bottom: 32px;
+			
+	// 		a {
+	// 			text-align: center;
+	// 		}
+
+	// 		h2 {
+	// 			color: $color-white;
+	// 			margin: 0;
+	// 		}
+	// 	}
+
+	// }
+
+	// &__btn {
+	// 	@media (min-width: $screen-lg) {
+	// 		display: none;
+	// 	}
+	// }
+
+

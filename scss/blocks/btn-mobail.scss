@@ -1,0 +1,25 @@
+.btn-mobail {
+
+			width: 288px;
+			height: 60px;
+			background-color: $color-main;
+			margin-left: 30px;
+			padding: 18px;
+			margin-bottom: 32px;
+			
+			a {
+				text-align: center;
+				font-weight: normal;
+				font-size: 16px;
+				text-transform: uppercase;
+			}
+
+			h2 {
+				color: $color-white;
+				margin: 0;
+			}
+		
+		@media (min-width: $screen-lg) {
+			display: none;
+		}
+	}

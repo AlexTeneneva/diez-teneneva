@@ -2,6 +2,7 @@
 	color: $color-white;
 	position: relative;
 	padding-top: 50px;
+	// overflow: hidden;
 
 	h2 {
 		font-size: 30px;
@@ -23,7 +24,7 @@
 
 		&__title {
 
-		&__title:before {
+		&:before {
 		content: "";
 		background-color: $color-main;
 		height: 1px;
@@ -34,45 +35,45 @@
 		left: -10px;
 	}
 
-	&__title:after {
-		content: "";
-		background-color: $color-main;
-		height: 1px;
-		width: 75%;
-		position: absolute;
-		display: block;
-		bottom: -5px;
-		left: -10px;
-	}
-
-			@media (min-width: $screen-lg) {
+		&:after {
+			content: "";
+			background-color: $color-main;
+			height: 1px;
+			width: 75%;
 			position: absolute;
-			bottom: 0px;
-			left: -50px;
-			writing-mode: tb-rl;
-			transform: rotate(180deg);
-			}
-			&:before {
-		  content: "";
-		  position: absolute;
-		  display: block;
-		  height: 525px;
-		  width: 2px;
-		  left: 30px;
-		  background-color: $color-main;
-		  padding-bottom: 40px;
-
+			display: block;
+			top: 34px;
+			left: -10px;
 		}
 
-		&:after {
-		  content: "";
-		  position: absolute;
-		  display: block;
-		  height: 525px;
-		  width: 2px;
-		  left: 105px;
-		  background-color: $color-main;
-		  padding-top: 40px;
+				@media (min-width: $screen-lg) {
+				position: absolute;
+				bottom: 0px;
+				left: -50px;
+				writing-mode: tb-rl;
+				transform: rotate(180deg);
+				&:before {
+			  content: "";
+			  position: absolute;
+			  display: block;
+			  height: 525px;
+			  width: 2px;
+			  left: 30px;
+			  background-color: $color-main;
+			  padding-bottom: 40px;
+
+			}
+
+			&:after {
+			  content: "";
+			  position: absolute;
+			  display: block;
+			  height: 525px;
+			  width: 2px;
+			  left: 105px;
+			  background-color: $color-main;
+			  padding-top: 40px;
+			}
 		}
 	}
 
@@ -80,6 +81,7 @@
 
 		&__item {
 		display: flex;
+		flex-wrap: wrap;
 	
 		&--yang {
 			background-image: url(../img/video_card_img_2.jpg);
@@ -106,10 +108,30 @@
 			background-repeat: no-repeat;
 			height: 569px;
 			margin-left: 100px;
-
+			flex-grow: 1;
 		}
 	}
 	&--offset {
 		margin-top: auto;
 	}
+
+// &__wrap {
+//   width: 100%;
+//   margin-bottom: -30px;
+//   padding: 0 0 30px;
+//   white-space: nowrap;
+//   overflow-y: hidden;
+//   overflow-x: scroll;
+//   -webkit-box-sizing: border-box;
+//   -webkit-overflow-scrolling: touch;
+//   -ms-overflow-style: none;
+// }
+
+// &__item {
+//   display: inline-block;
+//   vertical-align: top;
+//   white-space: normal;
+//  }
+
+
 }
